@@ -10,6 +10,23 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">Home</a></li>
+        <li class="active"><a href="/countries">Countries</a></li>
+        <li class="active"><a href="/languages">Languages</a></li>
+        <li class="active"><a href="/authors">Authors</a></li>
+        <li class="active"><a href="/books">Books</a></li>
+        <li class="active"><a href="/chapters">Chapters</a></li>
+        <li class="active"><a href="/paragraphs">Paragraphs</a></li>
+      </ul>
+    </header>
+
+    <div class="container">
+      <div class="jumbotron bigJumbo">
+        <%= yield %>
+      </div>
+    </div>
+
   </body>
 </html>
